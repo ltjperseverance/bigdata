@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>nginx 音频播放</title>
+</head>
+<body>
+<button onclick="myFunction()">播放音频</button>
+<!--<audio src="http://localhost/download/test.mp3" controls="controls">
+Your browser does not support the audio element.
+</audio>-->
+<audio id="myAudio" src="http://localhost/download/test.mp3"></audio>
+
+</body>
+<script>
+function myFunction()
+{
+var x = document.getElementById("myAudio");
+if(x.paused){
+  x.play()
+}else{
+  x.pause()
+}
+
+}
+</script>
+</html>
